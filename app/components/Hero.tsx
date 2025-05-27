@@ -24,7 +24,7 @@ const Hero = () => {
         <div
           className={cn(
             "absolute inset-0",
-            "[background-size:60px_60px]",
+            "[background-size:80px_80px]",
             // Light mode - much lighter gray (was #e4e4e7, now using rgba for transparency)
             "[background-image:linear-gradient(to_right,rgba(228,228,231,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(228,228,231,0.3)_1px,transparent_1px)]",
             // Dark mode - much lighter gray (was #262626, now using rgba for transparency)
@@ -32,7 +32,7 @@ const Hero = () => {
           )}
         />
         {/* Radial gradient for the container to give a faded look */}
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
